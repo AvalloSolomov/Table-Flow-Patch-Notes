@@ -1,0 +1,10 @@
+.vscode/
+*.backup
+DEBUG.js
+test.html
+REFACTORING.md
+*.png
+*.PNG
+*.jpg
+*.jpeg
+module.zip

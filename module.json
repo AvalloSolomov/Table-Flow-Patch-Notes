@@ -1,0 +1,33 @@
+{
+  "id": "table-flow-patch-notes",
+  "title": "Table Flow - Patch Notes",
+  "description": "Lets the GM write and save 'patch notes' entries and publish them as a popup shown to players on startup.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14.365"
+  },
+  "authors": [
+    {
+      "name": "Avallo"
+    }
+  ],
+  "scripts": [
+    "scripts/utils/dom-helpers.js",
+    "scripts/core/settings.js",
+    "scripts/core/socket-handler.js",
+    "scripts/ui/player-popup.js",
+    "scripts/ui/floating-button.js",
+    "scripts/ui/gm-manager.js",
+    "scripts/table-flow-patch-notes.js"
+  ],
+  "styles": [
+    "styles/table-flow-patch-notes.css"
+  ],
+  "socket": true,
+  "url": "https://github.com/AvalloSolomov/Table-Flow-Patch-Notes",
+  "manifest": "",
+  "download": "",
+  "license": "https://github.com/AvalloSolomov/Table-Flow-Patch-Notes/blob/main/LICENSE",
+  "readme": "README.md"
+}
