@@ -79,6 +79,7 @@ window.TableFlowPatchNotes.GMManager = class {
 
     static _generateEditorHTML(entries) {
         const entry = this._editingId ? entries.find(e => e.id === this._editingId) : null;
+        if (this._editingId && !entry) this._editingId = null; // stale id: fall back to new-entry mode
 
         return `
             <div class="tfpn-section" id="tfpn-editor-section">
@@ -120,10 +121,15 @@ window.TableFlowPatchNotes.GMManager = class {
                 return;
             }
 
-            if (this._editingId) {
-                await window.TableFlowPatchNotes.Settings.updateEntry(this._editingId, { title, body });
-            } else {
-                await window.TableFlowPatchNotes.Settings.addEntry(title, body);
+            try {
+                if (this._editingId) {
+                    await window.TableFlowPatchNotes.Settings.updateEntry(this._editingId, { title, body });
+                } else {
+                    await window.TableFlowPatchNotes.Settings.addEntry(title, body);
+                }
+            } catch (error) {
+                console.error('Table Flow - Patch Notes | Failed to save entry:', error);
+                ui.notifications.error('Could not save the patch note. See the console for details.');
             }
 
             this._editingId = null;

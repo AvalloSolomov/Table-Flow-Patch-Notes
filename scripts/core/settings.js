@@ -78,7 +78,8 @@ window.TableFlowPatchNotes.Settings = class {
 
     /** @returns {Array<{id:string,title:string,body:string,createdAt:number,updatedAt:number}>} */
     static getLibrary() {
-        return game.settings.get(this.MODULE_ID, 'library') ?? [];
+        // Clone so edits never mutate Foundry's cached setting value (which would make the save a no-op diff)
+        return structuredClone(game.settings.get(this.MODULE_ID, 'library') ?? []);
     }
 
     static async _saveLibrary(entries) {
@@ -134,7 +135,7 @@ window.TableFlowPatchNotes.Settings = class {
     }
 
     static getPublishedIds() {
-        return game.settings.get(this.MODULE_ID, 'publishedIds') ?? [];
+        return structuredClone(game.settings.get(this.MODULE_ID, 'publishedIds') ?? []);
     }
 
     static getPublishedVersion() {
