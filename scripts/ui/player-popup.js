@@ -63,7 +63,7 @@ window.TableFlowPatchNotes.PlayerPopup = class {
             <div class="tfpn-header">
                 <div class="tfpn-header-left">
                     <div class="tfpn-header-icon">
-                        <a class="tfpn-logo-link" href="https://tableflowapps.com" target="_blank" rel="noopener noreferrer"><img src="modules/table-flow-patch-notes/TABLEFLOW_LOGO.svg" alt="Table Flow"></a>
+                        <a class="tfpn-logo-link" href="https://tableflowapps.com" target="_blank" rel="noopener noreferrer"><img src="modules/table-flow-patch-notes/assets/TABLEFLOW_LOGO.svg" alt="Table Flow"></a>
                     </div>
                     <div class="tfpn-header-titles">
                         <h2 class="tfpn-header-title">${window.TableFlowPatchNotes.DOMHelpers.escapeHTML(title)}</h2>
@@ -80,7 +80,7 @@ window.TableFlowPatchNotes.PlayerPopup = class {
             <div class="tfpn-footer">
                 <button id="tfpn-popup-gotit" class="tfpn-btn tfpn-btn-primary tfpn-btn-full">Got it!</button>
                 <a class="tfpn-footer-brand" href="https://tableflowapps.com" target="_blank" rel="noopener noreferrer">
-                    <img class="tfpn-footer-logo" src="modules/table-flow-patch-notes/TABLEFLOW_LOGO.svg" alt="">
+                    <img class="tfpn-footer-logo" src="modules/table-flow-patch-notes/assets/TABLEFLOW_LOGO.svg" alt="">
                     <span>Table Flow</span>
                 </a>
             </div>

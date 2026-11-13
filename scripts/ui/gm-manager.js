@@ -47,7 +47,7 @@ window.TableFlowPatchNotes.GMManager = class {
             <div class="tfpn-header" id="tfpn-manager-drag-handle">
                 <div class="tfpn-header-left">
                     <div class="tfpn-header-icon">
-                        <a class="tfpn-logo-link" href="https://tableflowapps.com" target="_blank" rel="noopener noreferrer"><img src="modules/table-flow-patch-notes/TABLEFLOW_LOGO.svg" alt="Table Flow"></a>
+                        <a class="tfpn-logo-link" href="https://tableflowapps.com" target="_blank" rel="noopener noreferrer"><img src="modules/table-flow-patch-notes/assets/TABLEFLOW_LOGO.svg" alt="Table Flow"></a>
                     </div>
                     <div class="tfpn-header-titles">
                         <h2 class="tfpn-header-title">Patch Notes</h2>
